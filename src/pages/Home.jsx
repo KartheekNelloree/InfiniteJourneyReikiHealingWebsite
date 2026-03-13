@@ -245,13 +245,13 @@ export default function Home() {
       {/* ── Hero ── */}
       <section
         className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden"
-        style={{ background: 'linear-gradient(160deg, #1e1a2e 0%, #2d2048 60%, #1a2640 100%)' }}
+        style={{ background: 'linear-gradient(160deg, #f5f0ff 0%, #fdf8ef 60%, #f0f4ff 100%)' }}
       >
         {/* Background texture overlay */}
         <div
           style={{
             position: 'absolute', inset: 0, pointerEvents: 'none',
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cpath d='M80,40 C80,20 100,10 116,20 C132,30 140,47 127,59 C114,71 93,64 80,50 C67,64 46,71 33,59 C20,47 28,30 44,20 C60,10 80,20 80,40Z' fill='none' stroke='rgba(201,168,76,0.05)' stroke-width='1.5'/%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cpath d='M80,40 C80,20 100,10 116,20 C132,30 140,47 127,59 C114,71 93,64 80,50 C67,64 46,71 33,59 C20,47 28,30 44,20 C60,10 80,20 80,40Z' fill='none' stroke='rgba(201,168,76,0.15)' stroke-width='1.5'/%3E%3C/svg%3E")`,
             backgroundRepeat: 'repeat', backgroundSize: '160px 80px',
           }}
         />
@@ -308,7 +308,7 @@ export default function Home() {
           {/* Eyebrow label */}
           <p
             className="text-xs tracking-widest uppercase mb-5 font-medium"
-            style={{ color: 'var(--gold-light)', letterSpacing: '0.25em' }}
+            style={{ color: 'var(--gold)', letterSpacing: '0.25em' }}
           >
             Infinite Journey Reiki Healing Center
           </p>
@@ -316,7 +316,7 @@ export default function Home() {
           {/* Hero headline */}
           <h1
             className="font-playfair font-bold mb-6 leading-tight"
-            style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)', color: 'white' }}
+            style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)', color: 'var(--dark)' }}
           >
             Heal.{' '}
             <span className="text-gradient">Balance.</span>
@@ -327,20 +327,20 @@ export default function Home() {
           {/* Tagline */}
           <p
             className="text-lg mb-4 max-w-2xl mx-auto leading-relaxed"
-            style={{ color: 'rgba(232,213,163,0.85)' }}
+            style={{ color: 'var(--gold-dark)' }}
           >
             Geetha — Reiki Growth Coach &amp; Master Healer
           </p>
           <p
             className="text-base mb-10 max-w-xl mx-auto"
-            style={{ color: 'rgba(255,255,255,0.5)', letterSpacing: '0.04em' }}
+            style={{ color: 'rgba(60,40,80,0.55)', letterSpacing: '0.04em' }}
           >
             Marathahalli, Bangalore &nbsp;&bull;&nbsp; Online &amp; In-Person Sessions
           </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/booking" className="btn-white text-base px-9 py-4">
+            <Link to="/booking" className="btn-primary text-base px-9 py-4">
               Book a Consultation
             </Link>
             <Link
@@ -348,7 +348,7 @@ export default function Home() {
               className="text-base px-9 py-4 rounded-lg font-bold uppercase tracking-widest transition-all inline-block"
               style={{
                 border: '2px solid rgba(201,168,76,0.6)',
-                color: 'var(--gold-light)',
+                color: 'var(--gold)',
                 background: 'transparent',
                 fontSize: '0.88rem',
                 letterSpacing: '0.06em',
@@ -369,7 +369,7 @@ export default function Home() {
           </div>
 
           {/* Scroll indicator */}
-          <div className="mt-16 flex flex-col items-center gap-2" style={{ color: 'rgba(255,255,255,0.25)' }}>
+          <div className="mt-16 flex flex-col items-center gap-2" style={{ color: 'rgba(60,40,80,0.35)' }}>
             <span className="text-xs tracking-widest uppercase" style={{ letterSpacing: '0.2em' }}>Scroll</span>
             <svg className="w-4 h-6" fill="none" stroke="currentColor" viewBox="0 0 16 24">
               <rect x="2" y="2" width="12" height="20" rx="6" strokeWidth="1.2" />
