@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reiki Courses — Ananda Reiki Healing Center</title>
+  <meta name="description" content="Explore our Reiki training programs from Level 1 to Grand Master. Certified courses available online and offline." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold:        '#C9A84C',
+            'gold-light':'#E8D5A3',
+            'gold-dark': '#A8873A',
+            'spirit-purple': '#9B8EC4',
+            'purple-light':  '#D4CCE8',
+            'light-blue':    '#87CEEB',
+            'site-bg':       '#FAF8FF',
+            'dark-text':     '#2C2C2C',
+            'mid-text':      '#555566',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            lato:     ['Lato', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-site-bg text-dark-text">
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar" class="w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="white"/></svg>
+        </div>
+        <div>
+          <div class="font-playfair font-bold text-lg leading-none text-dark-text group-hover:text-gold transition-colors duration-300">Ananda</div>
+          <div class="font-lato text-xs tracking-widest uppercase text-mid-text leading-none mt-0.5">Reiki Healing Center</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About</a>
+        <a href="courses.html"      class="nav-link">Courses</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+        <a href="booking.html"      class="btn-primary text-sm px-5 py-2.5">Book Consultation</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" style="color:var(--gold)">Book Consultation</a>
+    </div>
+  </nav>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero">
+    <div class="fade-up">
+      <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-4">Learn &amp; Grow</p>
+      <h1 class="page-hero-title">Reiki Courses &amp; Training</h1>
+      <div class="divider mt-4"><div class="divider-dot"></div></div>
+      <p class="page-hero-sub mt-4">Internationally accredited Reiki certification programs for every stage of your healing journey — from curious beginner to Grand Master.</p>
+    </div>
+  </section>
+
+  <!-- ═══ INTRO ═══ -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center fade-up">
+      <p class="font-lato text-mid-text text-base leading-relaxed">
+        At Ananda Reiki Healing Center, our courses are designed with love, depth, and scientific understanding. Each program blends traditional Usui Reiki principles with modern healing insights, giving you both the energetic tools and the practical skills to heal yourself and others. Our certificates are recognized by the International Reiki Association (IRA) and are valid worldwide.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <span class="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-lato font-bold bg-purple-light text-spirit-purple">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          IRA Certified
+        </span>
+        <span class="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-lato font-bold bg-gold-light text-gold-dark">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Online &amp; Offline
+        </span>
+        <span class="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-lato font-bold" style="background:#e8f5e9;color:#2e7d32">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          Small Batches
+        </span>
+        <span class="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-lato font-bold bg-purple-light text-spirit-purple">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          Lifetime Support
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COURSE CARDS ═══ -->
+  <section class="py-12 px-6 pb-24">
+    <div class="max-w-7xl mx-auto space-y-10">
+
+      <!-- Course 1: Level 1 -->
+      <div class="course-card fade-up">
+        <div class="grid md:grid-cols-3">
+          <!-- Header panel -->
+          <div class="md:col-span-1 p-8 flex flex-col justify-between" style="background:linear-gradient(135deg,#E0DAF5 0%,#D4CCE8 100%)">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full text-xs font-bold font-lato bg-white text-spirit-purple mb-4">Level 1</div>
+              <h2 class="font-playfair text-2xl font-bold text-dark-text mb-2">Reiki Level 1</h2>
+              <p class="font-lato text-sm text-mid-text italic mb-6">Shoden — Foundation</p>
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Duration: <strong>2 Days</strong>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                  Mode: <strong>Online / Offline</strong>
+                </div>
+              </div>
+              <div class="text-3xl font-playfair font-bold text-gold">₹5,000</div>
+              <p class="font-lato text-xs text-mid-text mt-1">All inclusive</p>
+            </div>
+            <a href="booking.html" class="btn-primary mt-6 text-center justify-center">Enroll Now</a>
+          </div>
+          <!-- Details panel -->
+          <div class="md:col-span-2 p-8">
+            <p class="font-lato text-mid-text text-base leading-relaxed mb-6">
+              Begin your Reiki journey with our comprehensive Level 1 course. You will learn the history and origins of Usui Reiki, understand the principles of energy healing, receive your Level 1 attunement, and practice hands-on healing techniques for yourself and loved ones. No prior experience required — just an open heart and a willingness to heal.
+            </p>
+            <h4 class="font-playfair font-bold text-dark-text mb-4">What's Included:</h4>
+            <div class="grid sm:grid-cols-2 gap-3 mb-6">
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#C9A84C" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Level 1 Attunement ceremony</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#C9A84C" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">IRA-certified completion certificate</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#C9A84C" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Course manual &amp; reference guide</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#C9A84C" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">30-day post-course email support</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Self-healing</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Hand positions</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Reiki history</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Energy basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2: Level 2 -->
+      <div class="course-card fade-up delay-100" style="border-color:rgba(155,142,196,0.4)">
+        <div class="grid md:grid-cols-3">
+          <div class="md:col-span-1 p-8 flex flex-col justify-between" style="background:linear-gradient(135deg,#D4CCE8 0%,#C2B8E0 100%)">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold font-lato bg-spirit-purple text-white mb-4">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                Most Popular — Level 2
+              </div>
+              <h2 class="font-playfair text-2xl font-bold text-dark-text mb-2">Reiki Level 2</h2>
+              <p class="font-lato text-sm text-mid-text italic mb-6">Okuden — Practitioner</p>
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Duration: <strong>3 Days</strong>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                  Mode: <strong>Online / Offline</strong>
+                </div>
+              </div>
+              <div class="text-3xl font-playfair font-bold text-gold">₹8,000</div>
+              <p class="font-lato text-xs text-mid-text mt-1">Level 1 prerequisite</p>
+            </div>
+            <a href="booking.html" class="btn-primary mt-6 text-center justify-center">Enroll Now</a>
+          </div>
+          <div class="md:col-span-2 p-8">
+            <p class="font-lato text-mid-text text-base leading-relaxed mb-6">
+              Deepen your Reiki practice significantly with Level 2. Learn and work with the three sacred Reiki symbols — Cho Ku Rei (Power), Sei He Ki (Mental/Emotional), and Hon Sha Ze Sho Nen (Distance) — and discover how to send healing energy across time and space to anyone, anywhere in the world.
+            </p>
+            <h4 class="font-playfair font-bold text-dark-text mb-4">What's Included:</h4>
+            <div class="grid sm:grid-cols-2 gap-3 mb-6">
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Level 2 Attunement with 3 sacred symbols</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Distance healing protocol training</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Practitioner certificate (IRA accredited)</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#F8F5FF">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">3-month mentorship group access</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Sacred symbols</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Distance healing</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Client sessions</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Mental healing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3: Master -->
+      <div class="course-card fade-up delay-200">
+        <div class="grid md:grid-cols-3">
+          <div class="md:col-span-1 p-8 flex flex-col justify-between" style="background:linear-gradient(135deg,#E8D5A3 0%,#D4B86A 100%)">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full text-xs font-bold font-lato bg-white text-gold-dark mb-4">Level 3 — Master</div>
+              <h2 class="font-playfair text-2xl font-bold text-dark-text mb-2">Reiki Master</h2>
+              <p class="font-lato text-sm text-mid-text italic mb-6">Shinpiden — Teacher</p>
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Duration: <strong>5 Days</strong>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-lato text-mid-text">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                  Mode: <strong>Online / Offline</strong>
+                </div>
+              </div>
+              <div class="text-3xl font-playfair font-bold text-gold">₹15,000</div>
+              <p class="font-lato text-xs text-mid-text mt-1">Level 2 prerequisite</p>
+            </div>
+            <a href="booking.html" class="btn-primary mt-6 text-center justify-center">Enroll Now</a>
+          </div>
+          <div class="md:col-span-2 p-8">
+            <p class="font-lato text-mid-text text-base leading-relaxed mb-6">
+              The Reiki Master course is a profound commitment to the Reiki path. You will receive the Master attunement and the Dai Ko Myo (Master symbol), learn to teach and attune others at all levels, and fully embody Reiki as a way of life. This course qualifies you to run your own Reiki practice and teach students officially.
+            </p>
+            <h4 class="font-playfair font-bold text-dark-text mb-4">What's Included:</h4>
+            <div class="grid sm:grid-cols-2 gap-3 mb-6">
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#FFFBF0">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Master Attunement + Dai Ko Myo symbol</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#FFFBF0">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Learn to teach &amp; attune students</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#FFFBF0">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">IRA Master Teacher certificate</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:#FFFBF0">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">1-year mentorship &amp; community access</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Master symbol</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Teach others</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Attunement skills</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Business guide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4: Grand Master -->
+      <div class="course-card fade-up delay-300" style="border:2px solid rgba(201,168,76,0.4)">
+        <div class="grid md:grid-cols-3">
+          <div class="md:col-span-1 p-8 flex flex-col justify-between" style="background:linear-gradient(135deg,#2a2047 0%,#3d2d6e 100%)">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold font-lato mb-4" style="background:var(--gold);color:#fff">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                Grand Master
+              </div>
+              <h2 class="font-playfair text-2xl font-bold text-white mb-2">Reiki Grand Master</h2>
+              <p class="font-lato text-sm italic mb-6" style="color:rgba(255,255,255,0.6)">The Highest Attainment</p>
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="flex items-center gap-2 text-sm font-lato" style="color:rgba(255,255,255,0.7)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Duration: <strong style="color:#fff">7 Days</strong>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-lato" style="color:rgba(255,255,255,0.7)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                  Mode: <strong style="color:#fff">In-Person Only</strong>
+                </div>
+              </div>
+              <div class="text-3xl font-playfair font-bold text-gold">₹25,000</div>
+              <p class="font-lato text-xs mt-1" style="color:rgba(255,255,255,0.5)">Reiki Master prerequisite</p>
+            </div>
+            <a href="booking.html" class="btn-primary mt-6 text-center justify-center">Enroll Now</a>
+          </div>
+          <div class="md:col-span-2 p-8">
+            <div class="inline-block px-4 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark mb-4">By Application Only — Limited Seats</div>
+            <p class="font-lato text-mid-text text-base leading-relaxed mb-6">
+              The Reiki Grand Master program is reserved for dedicated Reiki Masters who feel called to the highest level of energetic mastery. You will receive advanced attunements, work with ancient Tibetan symbols, learn psychic surgery and aura cleansing techniques, and be equipped to train and certify Reiki Masters. This is a profound spiritual commitment and transformation.
+            </p>
+            <h4 class="font-playfair font-bold text-dark-text mb-4">What's Included:</h4>
+            <div class="grid sm:grid-cols-2 gap-3 mb-6">
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:linear-gradient(135deg,#F8F5FF,#FFFBF0)">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Grand Master Attunement</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:linear-gradient(135deg,#F8F5FF,#FFFBF0)">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Train &amp; certify Reiki Masters</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:linear-gradient(135deg,#F8F5FF,#FFFBF0)">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Tibetan symbols &amp; psychic surgery</span>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-lg" style="background:linear-gradient(135deg,#F8F5FF,#FFFBF0)">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5"><circle cx="10" cy="10" r="10" fill="#E8D5A3"/><path d="M6 10l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span class="font-lato text-sm text-mid-text">Grand Master certificate + ongoing mentorship</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Advanced attunements</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Aura cleansing</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">Certify Masters</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Global lineage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="py-24 px-6" style="background:linear-gradient(180deg,#F5F2FF 0%,var(--bg) 100%)">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-14 fade-up">
+        <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-3">Got Questions?</p>
+        <h2 class="section-heading mb-4">Frequently Asked Questions</h2>
+        <div class="divider"><div class="divider-dot"></div></div>
+      </div>
+
+      <div class="fade-up delay-100">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need any prior experience or spiritual background to take a Reiki course?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Absolutely not. Reiki is accessible to everyone, regardless of background, belief, religion, or prior experience. All you need is an open mind and a genuine desire to learn. Many of our most successful students began with zero knowledge of energy healing. Dr. Priya's teaching style is warm, approachable, and designed to meet you exactly where you are.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Are the certificates recognized internationally?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. All certificates issued by Ananda Reiki Healing Center are accredited by the International Reiki Association (IRA) and are recognized globally. Whether you wish to practice in India, Europe, the USA, or anywhere else in the world, your Ananda certificate will be respected and accepted by healing communities worldwide.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I take the online courses as effectively as the in-person ones?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. Reiki energy transcends physical boundaries, which is why distance attunements are just as powerful and effective as in-person ones. Our online courses use high-quality video calls, detailed course materials, and live Q&amp;A sessions. Many of our graduates who attended online rate the experience equal to, or sometimes even more comfortable than, in-person training.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How soon after Level 1 can I enroll in Level 2?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We recommend a minimum of 21 days of daily self-practice after your Level 1 attunement before proceeding to Level 2. This 21-day period allows your energy channels to open fully and stabilize. After completing this integration period, you are welcome to enroll in Level 2 at any time. Dr. Priya will guide you on readiness during your post-Level-1 check-in call.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="py-20 px-6" style="background:linear-gradient(135deg,#C9A84C 0%,#A8873A 100%)">
+    <div class="max-w-3xl mx-auto text-center fade-up">
+      <h2 class="font-playfair text-4xl font-bold text-white mb-5">Not Sure Which Course is Right for You?</h2>
+      <p class="font-lato text-lg text-white opacity-90 mb-8">Book a free 15-minute discovery call with Dr. Priya and get personalized guidance on the perfect starting point for your journey.</p>
+      <a href="booking.html" class="inline-flex items-center justify-center gap-2 bg-white text-gold font-lato font-bold text-base px-8 py-4 rounded-full hover:bg-gold-light transition-all duration-300 shadow-lg hover:-translate-y-1">
+        Book a Free Discovery Call
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-16 pb-8 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="white"/></svg></div>
+            <div><div class="font-playfair font-bold text-lg leading-none" style="color:var(--gold-light)">Ananda</div><div class="font-lato text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Reiki Healing Center</div></div>
+          </div>
+          <p class="font-lato text-sm leading-relaxed mb-6" style="color:rgba(255,255,255,0.55)">Transforming lives through the ancient healing art of Reiki.</p>
+          <div class="flex gap-3">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="social-icon" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Quick Links</h4><a href="index.html" class="footer-link">Home</a><a href="about.html" class="footer-link">About Us</a><a href="courses.html" class="footer-link">Courses</a><a href="testimonials.html" class="footer-link">Testimonials</a><a href="booking.html" class="footer-link">Book a Session</a><a href="contact.html" class="footer-link">Contact</a></div>
+        <div><h4 class="footer-heading">Our Services</h4><a href="courses.html" class="footer-link">Reiki Healing Sessions</a><a href="courses.html" class="footer-link">Chakra Balancing</a><a href="courses.html" class="footer-link">Distance Healing</a><a href="courses.html" class="footer-link">Reiki Attunements</a><a href="courses.html" class="footer-link">Corporate Wellness</a></div>
+        <div><h4 class="footer-heading">Contact Us</h4><div class="flex items-start gap-3 mb-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-lato text-sm" style="color:rgba(255,255,255,0.55)">42, Lotus Lane, Koramangala<br/>Bengaluru, Karnataka 560034</p></div><div class="flex items-center gap-3 mb-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" class="flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.92 1.18 2 2 0 012.92 0h3a2 2 0 012 1.72 19.79 19.79 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 19.79 19.79 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+919876543210" class="footer-link mb-0">+91 98765 43210</a></div><div class="flex items-center gap-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" class="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:hello@anandareiki.com" class="footer-link mb-0">hello@anandareiki.com</a></div></div>
+      </div>
+      <div class="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style="border-color:rgba(255,255,255,0.08)">
+        <p class="font-lato text-xs" style="color:rgba(255,255,255,0.35)">© 2025 Ananda Reiki Healing Center. All rights reserved.</p>
+        <div class="flex gap-6"><a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Privacy Policy</a><a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
