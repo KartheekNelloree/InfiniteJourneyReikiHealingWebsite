@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation — Ananda Reiki Healing Center</title>
+  <meta name="description" content="Book your Reiki healing session or course consultation with Dr. Priya Sharma at Ananda Reiki Healing Center." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold:        '#C9A84C',
+            'gold-light':'#E8D5A3',
+            'gold-dark': '#A8873A',
+            'spirit-purple': '#9B8EC4',
+            'purple-light':  '#D4CCE8',
+            'light-blue':    '#87CEEB',
+            'site-bg':       '#FAF8FF',
+            'dark-text':     '#2C2C2C',
+            'mid-text':      '#555566',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            lato:     ['Lato', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-site-bg text-dark-text">
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar" class="w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="white"/></svg>
+        </div>
+        <div>
+          <div class="font-playfair font-bold text-lg leading-none text-dark-text group-hover:text-gold transition-colors duration-300">Ananda</div>
+          <div class="font-lato text-xs tracking-widest uppercase text-mid-text leading-none mt-0.5">Reiki Healing Center</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About</a>
+        <a href="courses.html"      class="nav-link">Courses</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+        <a href="booking.html"      class="btn-primary text-sm px-5 py-2.5">Book Consultation</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" style="color:var(--gold)">Book Consultation</a>
+    </div>
+  </nav>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero">
+    <div class="fade-up">
+      <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-4">Take the First Step</p>
+      <h1 class="page-hero-title">Book a Consultation</h1>
+      <div class="divider mt-4"><div class="divider-dot"></div></div>
+      <p class="page-hero-sub mt-4">Reserve your spot for a healing session, course enrollment, or a free discovery call with Dr. Priya Sharma.</p>
+    </div>
+  </section>
+
+  <!-- ═══ BOOKING FORM + SIDEBAR ═══ -->
+  <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-3 gap-12">
+
+        <!-- LEFT: Booking Form (2/3 width) -->
+        <div class="lg:col-span-2 fade-up">
+          <div class="card p-8 rounded-2xl">
+            <h2 class="font-playfair text-2xl font-bold text-dark-text mb-2">Reserve Your Session</h2>
+            <p class="font-lato text-mid-text text-sm mb-8">Fill in the form below and we'll confirm your booking within 24 hours.</p>
+
+            <form id="bookingForm" novalidate>
+
+              <div class="grid sm:grid-cols-2 gap-x-6">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Full Name <span class="text-red-400">*</span></label>
+                  <input class="form-input" type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+                  <span class="form-error">Please enter your full name.</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span class="text-red-400">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+                  <span class="form-error">Please enter a valid email.</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span class="text-red-400">*</span></label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+                  <span class="form-error">Please enter a valid phone number.</span>
+                </div>
+
+                <!-- Course / Service -->
+                <div class="form-group">
+                  <label class="form-label" for="service">Course / Service <span class="text-red-400">*</span></label>
+                  <select class="form-select" id="service" name="service" required>
+                    <option value="" disabled selected>Select a service…</option>
+                    <optgroup label="Healing Sessions">
+                      <option value="reiki-session-60">Reiki Healing Session (60 min)</option>
+                      <option value="reiki-session-90">Reiki Healing Session (90 min)</option>
+                      <option value="chakra-balancing">Chakra Balancing Session</option>
+                      <option value="distance-healing">Distance Healing Session</option>
+                    </optgroup>
+                    <optgroup label="Courses">
+                      <option value="level-1">Reiki Level 1 — Shoden (₹5,000)</option>
+                      <option value="level-2">Reiki Level 2 — Okuden (₹8,000)</option>
+                      <option value="level-3">Reiki Master — Shinpiden (₹15,000)</option>
+                      <option value="grand-master">Reiki Grand Master (₹25,000)</option>
+                    </optgroup>
+                    <optgroup label="Consultation">
+                      <option value="discovery-call">Free Discovery Call (15 min)</option>
+                      <option value="general-consultation">General Consultation</option>
+                    </optgroup>
+                  </select>
+                  <span class="form-error">Please select a service.</span>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="form-group">
+                  <label class="form-label" for="date">Preferred Date <span class="text-red-400">*</span></label>
+                  <input class="form-input" type="date" id="date" name="date" required />
+                  <span class="form-error">Please select a preferred date.</span>
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="form-group">
+                  <label class="form-label" for="time">Preferred Time</label>
+                  <select class="form-select" id="time" name="time">
+                    <option value="" disabled selected>Select a time slot…</option>
+                    <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
+                    <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
+                    <option value="evening">Evening (4:00 PM – 7:00 PM)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label class="form-label" for="message">Message / Any specific concerns</label>
+                <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Tell us about your health goals, any specific concerns, or questions you may have…"></textarea>
+              </div>
+
+              <!-- How did you hear -->
+              <div class="form-group">
+                <label class="form-label" for="referral">How did you hear about us?</label>
+                <select class="form-select" id="referral" name="referral">
+                  <option value="" disabled selected>Select an option…</option>
+                  <option value="google">Google / Search Engine</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="friend">Friend / Family Referral</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Privacy notice -->
+              <p class="font-lato text-xs text-mid-text mb-6">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline mr-1 -mt-0.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Your information is kept strictly confidential and will never be shared with third parties.
+              </p>
+
+              <!-- Submit -->
+              <button type="submit" class="btn-primary w-full py-4 text-base justify-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book Now
+              </button>
+
+            </form>
+
+            <!-- Success Message -->
+            <div id="bookingSuccess" class="form-success">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" class="mx-auto mb-3"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+              <h3 class="font-playfair text-xl font-bold mb-2">Booking Request Received!</h3>
+              <p class="font-lato text-sm">Thank you for reaching out. Dr. Priya will personally review your request and confirm your appointment within 24 hours. Please check your email for a confirmation message.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT: Sidebar -->
+        <div class="lg:col-span-1 space-y-6 fade-up delay-200">
+
+          <!-- Contact Info Card -->
+          <div class="card p-6 rounded-2xl">
+            <h3 class="font-playfair text-xl font-bold text-dark-text mb-4">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background:var(--gold-light)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="font-lato font-bold text-dark-text text-sm">Address</p>
+                  <p class="font-lato text-mid-text text-sm">42, Lotus Lane, Koramangala<br/>Bengaluru, Karnataka 560034</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background:var(--gold-light)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.92 1.18 2 2 0 012.92 0h3a2 2 0 012 1.72 19.79 19.79 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 19.79 19.79 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <p class="font-lato font-bold text-dark-text text-sm">Phone / WhatsApp</p>
+                  <a href="tel:+919876543210" class="font-lato text-gold text-sm hover:underline">+91 98765 43210</a>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background:var(--gold-light)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="font-lato font-bold text-dark-text text-sm">Email</p>
+                  <a href="mailto:hello@anandareiki.com" class="font-lato text-gold text-sm hover:underline">hello@anandareiki.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Working Hours -->
+          <div class="card p-6 rounded-2xl">
+            <h3 class="font-playfair text-xl font-bold text-dark-text mb-4">Working Hours</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center py-2 border-b" style="border-color:rgba(201,168,76,0.15)">
+                <span class="font-lato text-sm font-bold text-mid-text">Monday – Friday</span>
+                <span class="font-lato text-sm text-gold font-bold">9:00 AM – 7:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b" style="border-color:rgba(201,168,76,0.15)">
+                <span class="font-lato text-sm font-bold text-mid-text">Saturday</span>
+                <span class="font-lato text-sm text-gold font-bold">9:00 AM – 5:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-2">
+                <span class="font-lato text-sm font-bold text-mid-text">Sunday</span>
+                <span class="font-lato text-sm text-spirit-purple font-bold">By Appointment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- What to Expect -->
+          <div class="card p-6 rounded-2xl">
+            <h3 class="font-playfair text-xl font-bold text-dark-text mb-4">What to Expect</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background:var(--gold-light)">
+                  <span class="font-lato font-bold text-xs text-gold">1</span>
+                </div>
+                <p class="font-lato text-sm text-mid-text">Submit your booking request with preferred date and service.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background:var(--gold-light)">
+                  <span class="font-lato font-bold text-xs text-gold">2</span>
+                </div>
+                <p class="font-lato text-sm text-mid-text">Receive a confirmation email within 24 hours from Dr. Priya.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background:var(--gold-light)">
+                  <span class="font-lato font-bold text-xs text-gold">3</span>
+                </div>
+                <p class="font-lato text-sm text-mid-text">Receive a link or address details for your session or course.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background:var(--gold-light)">
+                  <span class="font-lato font-bold text-xs text-gold">4</span>
+                </div>
+                <p class="font-lato text-sm text-mid-text">Arrive 10 minutes early. Wear comfortable, loose clothing. Come with an open heart.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick guarantee -->
+          <div class="rounded-2xl p-5 text-center" style="background:linear-gradient(135deg,#2a2047,#3d2d6e)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" class="mx-auto mb-3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h4 class="font-playfair font-bold text-white mb-2">100% Satisfaction Guarantee</h4>
+            <p class="font-lato text-xs" style="color:rgba(255,255,255,0.65)">If you are not completely satisfied with your session, we offer a full rebook at no extra cost.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-16 pb-8 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="white"/></svg></div><div><div class="font-playfair font-bold text-lg leading-none" style="color:var(--gold-light)">Ananda</div><div class="font-lato text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Reiki Healing Center</div></div></div>
+          <p class="font-lato text-sm leading-relaxed mb-6" style="color:rgba(255,255,255,0.55)">Transforming lives through the ancient healing art of Reiki.</p>
+          <div class="flex gap-3"><a href="#" class="social-icon" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#" class="social-icon" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+        </div>
+        <div><h4 class="footer-heading">Quick Links</h4><a href="index.html" class="footer-link">Home</a><a href="about.html" class="footer-link">About Us</a><a href="courses.html" class="footer-link">Courses</a><a href="testimonials.html" class="footer-link">Testimonials</a><a href="booking.html" class="footer-link">Book a Session</a><a href="contact.html" class="footer-link">Contact</a></div>
+        <div><h4 class="footer-heading">Our Services</h4><a href="courses.html" class="footer-link">Reiki Healing Sessions</a><a href="courses.html" class="footer-link">Chakra Balancing</a><a href="courses.html" class="footer-link">Distance Healing</a><a href="courses.html" class="footer-link">Reiki Attunements</a><a href="courses.html" class="footer-link">Corporate Wellness</a></div>
+        <div><h4 class="footer-heading">Contact Us</h4><div class="flex items-start gap-3 mb-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-lato text-sm" style="color:rgba(255,255,255,0.55)">42, Lotus Lane, Koramangala<br/>Bengaluru, Karnataka 560034</p></div><div class="flex items-center gap-3 mb-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" class="flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.92 1.18 2 2 0 012.92 0h3a2 2 0 012 1.72 19.79 19.79 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 19.79 19.79 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+919876543210" class="footer-link mb-0">+91 98765 43210</a></div></div>
+      </div>
+      <div class="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style="border-color:rgba(255,255,255,0.08)">
+        <p class="font-lato text-xs" style="color:rgba(255,255,255,0.35)">© 2025 Ananda Reiki Healing Center. All rights reserved.</p>
+        <div class="flex gap-6"><a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Privacy Policy</a><a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananda Reiki Healing Center — Heal. Balance. Transform.</title>
+  <meta name="description" content="Experience the ancient art of Reiki healing for mind, body and soul at Ananda Reiki Healing Center. Book your consultation today." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold:        '#C9A84C',
+            'gold-light':'#E8D5A3',
+            'gold-dark': '#A8873A',
+            'spirit-purple': '#9B8EC4',
+            'purple-light':  '#D4CCE8',
+            'light-blue':    '#87CEEB',
+            'site-bg':       '#FAF8FF',
+            'dark-text':     '#2C2C2C',
+            'mid-text':      '#555566',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            lato:     ['Lato', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-site-bg text-dark-text">
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="2" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-playfair font-bold text-lg leading-none text-dark-text group-hover:text-gold transition-colors duration-300">Ananda</div>
+          <div class="font-lato text-xs tracking-widest uppercase text-mid-text leading-none mt-0.5">Reiki Healing Center</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About</a>
+        <a href="courses.html"      class="nav-link">Courses</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+        <a href="booking.html"      class="btn-primary text-sm px-5 py-2.5">Book Consultation</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" style="color:var(--gold)">Book Consultation</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <!-- Decorative circles -->
+    <div class="absolute top-20 left-10 w-64 h-64 rounded-full opacity-20" style="background:radial-gradient(circle, #9B8EC4, transparent)"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-15" style="background:radial-gradient(circle, #C9A84C, transparent)"></div>
+    <div class="absolute top-1/3 right-1/4 w-48 h-48 rounded-full opacity-10" style="background:radial-gradient(circle, #87CEEB, transparent)"></div>
+
+    <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+
+      <!-- Lotus / Chakra SVG -->
+      <div class="flex justify-center mb-8 fade-up">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer petals -->
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(45 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(90 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(135 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(180 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(225 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(270 48 48)"/>
+          <path d="M48 48 C48 32 56 18 48 8 C40 18 48 32 48 48Z" fill="#9B8EC4" opacity="0.7" transform="rotate(315 48 48)"/>
+          <!-- Inner petals -->
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9"/>
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9" transform="rotate(60 48 48)"/>
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9" transform="rotate(120 48 48)"/>
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9" transform="rotate(180 48 48)"/>
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9" transform="rotate(240 48 48)"/>
+          <path d="M48 48 C48 37 52 28 48 21 C44 28 48 37 48 48Z" fill="#C9A84C" opacity="0.9" transform="rotate(300 48 48)"/>
+          <!-- Center -->
+          <circle cx="48" cy="48" r="9" fill="url(#heroGrad)"/>
+          <circle cx="48" cy="48" r="5" fill="white" opacity="0.85"/>
+          <defs>
+            <radialGradient id="heroGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#E8D5A3"/>
+              <stop offset="100%" stop-color="#C9A84C"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <h1 class="section-heading text-5xl md:text-6xl lg:text-7xl mb-6 fade-up delay-100" style="color:var(--dark-text)">
+        Heal. <span style="color:var(--spirit-purple)">Balance.</span> <span style="color:var(--gold)">Transform.</span>
+      </h1>
+
+      <p class="font-lato text-lg md:text-xl text-mid-text max-w-2xl mx-auto mb-10 fade-up delay-200">
+        Experience the ancient art of Reiki healing for mind, body &amp; soul. Restore your inner harmony and awaken your true potential.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up delay-300">
+        <a href="booking.html" class="btn-primary text-base px-8 py-4">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a Consultation
+        </a>
+        <a href="courses.html" class="btn-outline text-base px-8 py-4">
+          Explore Courses
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="mt-16 flex justify-center fade-in delay-500">
+        <a href="#about" class="flex flex-col items-center gap-2 text-mid-text text-xs font-lato tracking-widest uppercase opacity-70 hover:opacity-100 transition-opacity">
+          <span>Scroll</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation:bounce 2s infinite"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <style>@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}</style>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT REIKI SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Text -->
+        <div class="fade-up">
+          <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-4">Discover the Power</p>
+          <h2 class="section-heading mb-6">What is Reiki Healing?</h2>
+          <div class="divider" style="margin:0 0 1.5rem 0; width:fit-content">
+            <div class="divider-dot"></div>
+          </div>
+          <p class="font-lato text-mid-text text-base leading-relaxed mb-6">
+            Reiki is a Japanese healing technique based on the principle that the therapist can channel energy into the patient by means of touch or distance, activating the natural healing processes of the patient's body and restoring physical, emotional, and mental well-being.
+          </p>
+          <p class="font-lato text-mid-text text-base leading-relaxed mb-8">
+            Derived from the Japanese words <em style="color:var(--spirit-purple)">"Rei"</em> (Universal Life) and <em style="color:var(--gold)">"Ki"</em> (Energy), Reiki is a holistic approach that addresses not just symptoms but the root causes of imbalance in the body and mind.
+          </p>
+
+          <ul class="gold-bullet-list mb-8">
+            <li>Reduces stress and anxiety, promoting deep relaxation and inner peace</li>
+            <li>Accelerates natural healing and supports immune system function</li>
+            <li>Balances chakras and removes energetic blockages for holistic wellness</li>
+          </ul>
+
+          <a href="about.html" class="btn-primary inline-flex">Learn More About Us</a>
+        </div>
+
+        <!-- Right: Mandala Card -->
+        <div class="flex justify-center fade-up delay-200">
+          <div class="relative">
+            <div class="card p-8 rounded-3xl" style="background:linear-gradient(135deg,#F0EBF9,#FDF9EE);max-width:380px">
+              <!-- Mandala SVG -->
+              <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+                <!-- Outer ring -->
+                <circle cx="160" cy="160" r="148" stroke="#E8D5A3" stroke-width="1.5" stroke-dasharray="8 4"/>
+                <circle cx="160" cy="160" r="130" stroke="#D4CCE8" stroke-width="1" stroke-dasharray="6 6"/>
+                <!-- Outer petals x8 -->
+                <g opacity="0.5">
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(45 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(90 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(135 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(180 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(225 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(270 160 160)"/>
+                  <ellipse cx="160" cy="44" rx="12" ry="30" fill="#9B8EC4" transform="rotate(315 160 160)"/>
+                </g>
+                <!-- Mid ring petals x12 -->
+                <g opacity="0.65">
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(30 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(60 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(90 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(120 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(150 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(180 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(210 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(240 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(270 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(300 160 160)"/>
+                  <ellipse cx="160" cy="90" rx="8" ry="22" fill="#C9A84C" transform="rotate(330 160 160)"/>
+                </g>
+                <!-- Inner ring -->
+                <circle cx="160" cy="160" r="55" fill="#F8F4FF" stroke="#D4CCE8" stroke-width="1.5"/>
+                <!-- Inner petals x6 -->
+                <g opacity="0.8">
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4"/>
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4" transform="rotate(60 160 160)"/>
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4" transform="rotate(120 160 160)"/>
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4" transform="rotate(180 160 160)"/>
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4" transform="rotate(240 160 160)"/>
+                  <ellipse cx="160" cy="122" rx="6" ry="16" fill="#9B8EC4" transform="rotate(300 160 160)"/>
+                </g>
+                <!-- Center -->
+                <circle cx="160" cy="160" r="28" fill="url(#mandalaGrad)"/>
+                <circle cx="160" cy="160" r="16" fill="white" opacity="0.7"/>
+                <circle cx="160" cy="160" r="7" fill="#C9A84C"/>
+                <defs>
+                  <radialGradient id="mandalaGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#E8D5A3"/>
+                    <stop offset="100%" stop-color="#9B8EC4"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+
+              <div class="text-center mt-4">
+                <p class="font-playfair italic text-spirit-purple text-lg">"The energy of the universe flows through you."</p>
+              </div>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg px-5 py-3 border border-gold-light">
+              <p class="font-playfair text-gold font-bold text-lg">10+</p>
+              <p class="font-lato text-xs text-mid-text tracking-wide">Years of Practice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="py-24 px-6" style="background:linear-gradient(180deg,#F5F2FF 0%,var(--bg) 100%)">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-up">
+        <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-3">What We Offer</p>
+        <h2 class="section-heading mb-4">Our Healing Services</h2>
+        <div class="divider"><div class="divider-dot"></div></div>
+        <p class="section-subheading">Comprehensive healing modalities to restore balance, vitality and spiritual harmony in your life.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Service 1 -->
+        <div class="service-card fade-up delay-100">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4 C16 4 8 10 8 18 C8 22.4 11.6 26 16 26 C20.4 26 24 22.4 24 18 C24 10 16 4 16 4Z" fill="#9B8EC4" opacity="0.7"/>
+              <circle cx="16" cy="17" r="4" fill="#C9A84C"/>
+              <path d="M16 13 L16 6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-dark-text mb-3">Reiki Healing Sessions</h3>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-4">One-on-one healing sessions channeling universal life force energy to promote deep relaxation, stress relief, and holistic well-being.</p>
+          <span class="inline-block text-xs font-lato font-bold tracking-widest uppercase text-gold">60 min / 90 min</span>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-up delay-200">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="12" stroke="#9B8EC4" stroke-width="1.5" fill="none"/>
+              <circle cx="16" cy="8" r="3" fill="#FF6B6B" opacity="0.8"/>
+              <circle cx="16" cy="16" r="3" fill="#C9A84C"/>
+              <circle cx="16" cy="24" r="3" fill="#9B8EC4"/>
+              <circle cx="22" cy="11" r="2.5" fill="#FF9F43" opacity="0.8"/>
+              <circle cx="22" cy="21" r="2.5" fill="#54A0FF" opacity="0.8"/>
+              <circle cx="10" cy="11" r="2.5" fill="#5F27CD" opacity="0.7"/>
+              <circle cx="10" cy="21" r="2.5" fill="#00D2D3" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-dark-text mb-3">Chakra Balancing</h3>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-4">Expert alignment and balancing of all seven chakras, removing blockages and restoring the natural flow of energy through your body's energy centers.</p>
+          <span class="inline-block text-xs font-lato font-bold tracking-widest uppercase text-gold">90 min sessions</span>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-up delay-300">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="10" cy="16" r="5" fill="#9B8EC4" opacity="0.6"/>
+              <circle cx="22" cy="16" r="5" fill="#C9A84C" opacity="0.6"/>
+              <path d="M10 16 Q16 8 22 16" stroke="#9B8EC4" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+              <path d="M10 16 Q16 24 22 16" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+              <path d="M6 10 L10 16 L6 22" stroke="#9B8EC4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M26 10 L22 16 L26 22" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-dark-text mb-3">Distance Healing</h3>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-4">Receive powerful Reiki healing from anywhere in the world. Energy transcends physical boundaries — experience healing in the comfort of your home.</p>
+          <span class="inline-block text-xs font-lato font-bold tracking-widest uppercase text-gold">Remote sessions</span>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-up delay-400">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <polygon points="16,4 19,12 28,12 21,18 24,26 16,21 8,26 11,18 4,12 13,12" fill="#C9A84C" opacity="0.8"/>
+              <circle cx="16" cy="16" r="4" fill="white" opacity="0.9"/>
+              <circle cx="16" cy="16" r="2" fill="#C9A84C"/>
+            </svg>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-dark-text mb-3">Reiki Attunements</h3>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-4">Sacred attunement ceremonies to open and expand your energy channels, connecting you to universal life force energy as a Reiki practitioner.</p>
+          <span class="inline-block text-xs font-lato font-bold tracking-widest uppercase text-gold">By certification level</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COURSES PREVIEW
+  ═══════════════════════════════════════════ -->
+  <section id="courses" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-up">
+        <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-3">Begin Your Journey</p>
+        <h2 class="section-heading mb-4">Transform Your Life</h2>
+        <div class="divider"><div class="divider-dot"></div></div>
+        <p class="section-subheading">Our structured Reiki training programs take you from curious beginner to certified Master healer.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Course 1 -->
+        <div class="course-card fade-up delay-100">
+          <div class="course-card-header">
+            <span class="course-price-badge">₹5,000</span>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:rgba(155,142,196,0.3)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7l9 5 9-5-9-5z" fill="#9B8EC4"/><path d="M3 17l9 5 9-5" stroke="#9B8EC4" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M3 12l9 5 9-5" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-dark-text">Level 1 Reiki</h3>
+            <p class="font-lato text-sm text-mid-text mt-1">Foundation — Shoden</p>
+          </div>
+          <div class="p-6">
+            <p class="font-lato text-mid-text text-sm leading-relaxed mb-5">Discover the fundamentals of Reiki, learn hand positions, and receive your first attunement. Begin your healing journey and learn to heal yourself and others.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">2 Days</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Online/Offline</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato" style="background:#e8f5e9;color:#2e7d32">Certificate</span>
+            </div>
+            <a href="courses.html" class="btn-outline w-full text-center block">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card fade-up delay-200" style="transform:translateY(-8px)">
+          <div class="course-card-header relative">
+            <div class="absolute top-0 left-0 right-0 bottom-0 opacity-20" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)"></div>
+            <div class="absolute top-3 left-3 bg-spirit-purple text-white text-xs font-lato font-bold px-3 py-1 rounded-full tracking-wider">POPULAR</div>
+            <span class="course-price-badge">₹8,000</span>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4 relative z-10" style="background:rgba(201,168,76,0.3)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C9A84C" stroke-width="1.5"/><path d="M8 12l3 3 5-6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-dark-text relative z-10">Level 2 Reiki</h3>
+            <p class="font-lato text-sm text-mid-text mt-1 relative z-10">Practitioner — Okuden</p>
+          </div>
+          <div class="p-6">
+            <p class="font-lato text-mid-text text-sm leading-relaxed mb-5">Deepen your practice with sacred Reiki symbols, learn mental/emotional healing techniques, and master distance healing for clients worldwide.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">3 Days</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Online/Offline</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato" style="background:#e8f5e9;color:#2e7d32">Certificate</span>
+            </div>
+            <a href="courses.html" class="btn-primary w-full text-center block">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card fade-up delay-300">
+          <div class="course-card-header">
+            <span class="course-price-badge">₹15,000</span>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:rgba(201,168,76,0.3)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="#C9A84C"/></svg>
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-dark-text">Reiki Master</h3>
+            <p class="font-lato text-sm text-mid-text mt-1">Master — Shinpiden</p>
+          </div>
+          <div class="p-6">
+            <p class="font-lato text-mid-text text-sm leading-relaxed mb-5">Receive the Master attunement, learn to teach and attune others, and fully embody Reiki as a way of life. The highest level of Reiki training.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-purple-light text-spirit-purple">5 Days</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato bg-gold-light text-gold-dark">Online/Offline</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold font-lato" style="background:#fff3e0;color:#e65100">Master Cert</span>
+            </div>
+            <a href="courses.html" class="btn-outline w-full text-center block">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12 fade-up">
+        <a href="courses.html" class="btn-primary px-10">View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section id="testimonials" class="py-24 px-6" style="background:linear-gradient(180deg,#F5F2FF 0%,var(--bg) 100%)">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-up">
+        <p class="font-lato text-sm font-bold tracking-widest uppercase text-gold mb-3">Real Experiences</p>
+        <h2 class="section-heading mb-4">What Our Students Say</h2>
+        <div class="divider"><div class="divider-dot"></div></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card fade-up delay-100">
+          <div class="star-rating">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-6 mt-4 relative z-10">
+            "My life has completely transformed after attending the Reiki Level 1 course with Dr. Priya. The anxiety I had carried for years simply dissolved. I feel grounded, peaceful, and energized every single day."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="avatar-circle">A</div>
+            <div>
+              <p class="font-playfair font-bold text-dark-text">Anjali Mehta</p>
+              <p class="font-lato text-xs text-mid-text">Reiki Level 1 Graduate</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card fade-up delay-200">
+          <div class="star-rating">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-6 mt-4 relative z-10">
+            "The distance healing sessions are phenomenal. I was skeptical at first, but after three sessions, the chronic back pain I'd had for five years significantly improved. Dr. Priya's energy is incredibly powerful and compassionate."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="avatar-circle" style="background:linear-gradient(135deg,#C9A84C,#9B8EC4)">R</div>
+            <div>
+              <p class="font-playfair font-bold text-dark-text">Rahul Nair</p>
+              <p class="font-lato text-xs text-mid-text">Distance Healing Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card fade-up delay-300">
+          <div class="star-rating">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A84C"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <p class="font-lato text-mid-text text-sm leading-relaxed mb-6 mt-4 relative z-10">
+            "Completing the Reiki Master program was the most transformative experience of my life. I now run my own healing practice and have helped hundreds of clients. I owe it all to Dr. Priya's exceptional teaching."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="avatar-circle" style="background:linear-gradient(135deg,#87CEEB,#9B8EC4)">S</div>
+            <div>
+              <p class="font-playfair font-bold text-dark-text">Sunita Krishnamurti</p>
+              <p class="font-lato text-xs text-mid-text">Reiki Master Graduate</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12 fade-up">
+        <a href="testimonials.html" class="btn-outline px-10">Read More Stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       STATS
+  ═══════════════════════════════════════════ -->
+  <section id="stats" class="py-20 px-6" style="background:linear-gradient(135deg,#2a2047 0%,#1a1535 100%)">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+
+        <div class="fade-up delay-100">
+          <div class="stat-number counter" data-target="500" data-suffix="+">0</div>
+          <p class="font-lato font-bold text-gold-light mt-2 tracking-widest uppercase text-sm">Students Trained</p>
+          <p class="font-lato text-sm mt-2" style="color:rgba(255,255,255,0.5)">From across India &amp; abroad</p>
+        </div>
+
+        <div class="fade-up delay-200">
+          <div class="stat-number counter" data-target="10" data-suffix="+">0</div>
+          <p class="font-lato font-bold text-gold-light mt-2 tracking-widest uppercase text-sm">Years Experience</p>
+          <p class="font-lato text-sm mt-2" style="color:rgba(255,255,255,0.5)">In energy healing &amp; teaching</p>
+        </div>
+
+        <div class="fade-up delay-300">
+          <div class="stat-number counter" data-target="100" data-suffix="%">0</div>
+          <p class="font-lato font-bold text-gold-light mt-2 tracking-widest uppercase text-sm">Satisfaction Rate</p>
+          <p class="font-lato text-sm mt-2" style="color:rgba(255,255,255,0.5)">Verified by student reviews</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="py-24 px-6 relative overflow-hidden" style="background:linear-gradient(135deg,#C9A84C 0%,#A8873A 50%,#8a6d2f 100%)">
+    <div class="absolute inset-0 opacity-10" style="background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cpath d='M60,30 C60,15 75,8 87,15 C99,22 105,35 95,44 C85,53 70,48 60,38 C50,48 35,53 25,44 C15,35 21,22 33,15 C45,8 60,15 60,30Z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E\");background-repeat:repeat;background-size:120px 60px"></div>
+    <div class="max-w-3xl mx-auto text-center relative z-10 fade-up">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">Begin Your Healing Journey Today</h2>
+      <p class="font-lato text-lg text-white opacity-90 mb-10">Take the first step toward harmony, balance, and transformation. Your journey to healing begins with a single consultation.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="booking.html" class="inline-flex items-center justify-center gap-2 bg-white text-gold font-lato font-bold text-base px-8 py-4 rounded-full hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a Consultation
+        </a>
+        <a href="contact.html" class="btn-outline-white text-base px-8 py-4">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="pt-16 pb-8 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#9B8EC4,#C9A84C)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,12 C12,7 15.5,4 18.5,6 C21.5,8 22.5,12.5 19.5,15 C16.5,17.5 13.5,16 12,13 C10.5,16 7.5,17.5 4.5,15 C1.5,12.5 2.5,8 5.5,6 C8.5,4 12,7 12,12Z" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="white"/></svg>
+            </div>
+            <div>
+              <div class="font-playfair font-bold text-lg leading-none" style="color:var(--gold-light)">Ananda</div>
+              <div class="font-lato text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Reiki Healing Center</div>
+            </div>
+          </div>
+          <p class="font-lato text-sm leading-relaxed mb-6" style="color:rgba(255,255,255,0.55)">Transforming lives through the ancient healing art of Reiki. Join our community of healers and seekers.</p>
+          <div class="flex gap-3">
+            <!-- Facebook -->
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="rgba(255,255,255,0.7)" stroke="none"/></svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="#" class="social-icon" aria-label="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <a href="index.html"        class="footer-link">Home</a>
+          <a href="about.html"        class="footer-link">About Us</a>
+          <a href="courses.html"      class="footer-link">Courses</a>
+          <a href="testimonials.html" class="footer-link">Testimonials</a>
+          <a href="booking.html"      class="footer-link">Book a Session</a>
+          <a href="contact.html"      class="footer-link">Contact</a>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <a href="courses.html" class="footer-link">Reiki Healing Sessions</a>
+          <a href="courses.html" class="footer-link">Chakra Balancing</a>
+          <a href="courses.html" class="footer-link">Distance Healing</a>
+          <a href="courses.html" class="footer-link">Reiki Attunements</a>
+          <a href="courses.html" class="footer-link">Group Healing</a>
+          <a href="courses.html" class="footer-link">Corporate Wellness</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="flex items-start gap-3 mb-3">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" stroke-linecap="round" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p class="font-lato text-sm" style="color:rgba(255,255,255,0.55)">42, Lotus Lane, Koramangala<br/>Bengaluru, Karnataka 560034</p>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.92 1.18 2 2 0 012.92 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+919876543210" class="footer-link mb-0">+91 98765 43210</a>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:hello@anandareiki.com" class="footer-link mb-0">hello@anandareiki.com</a>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 flex-shrink-0"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            <div>
+              <p class="font-lato text-xs" style="color:rgba(255,255,255,0.55)">Mon – Sat: 9:00 AM – 7:00 PM</p>
+              <p class="font-lato text-xs" style="color:rgba(255,255,255,0.55)">Sunday: By appointment only</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style="border-color:rgba(255,255,255,0.08)">
+        <p class="font-lato text-xs" style="color:rgba(255,255,255,0.35)">© 2025 Ananda Reiki Healing Center. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Privacy Policy</a>
+          <a href="#" class="font-lato text-xs hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.35)">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script.js -->
+  <script src="js/script.js"></script>
+</body>
+</html>
