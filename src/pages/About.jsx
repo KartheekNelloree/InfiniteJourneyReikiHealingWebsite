@@ -41,8 +41,8 @@ export default function About() {
               <img
                 src="/geetha.jpg"
                 alt="Geetha — Reiki Growth Coach"
-                className="w-72 h-72 rounded-full object-cover object-top relative z-10"
-                style={{ boxShadow: '0 20px 50px rgba(155,142,196,0.35)' }}
+                className="w-80 h-80 rounded-full object-cover relative z-10"
+                style={{ objectPosition: 'center 15%', boxShadow: '0 20px 50px rgba(155,142,196,0.35)' }}
               />
               {/* Badge */}
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 px-4 py-1.5 rounded-full text-white text-xs font-semibold tracking-wide whitespace-nowrap" style={{ background: 'linear-gradient(135deg, var(--gold), var(--gold-dark))', boxShadow: '0 4px 15px rgba(201,168,76,0.4)' }}>

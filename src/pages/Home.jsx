@@ -129,7 +129,7 @@ function StatCounter({ number, label, suffix }) {
       >
         <span ref={ref}>0</span>{suffix}
       </div>
-      <p className="text-sm tracking-widest uppercase font-medium" style={{ color: 'rgba(232,213,163,0.7)' }}>
+      <p className="text-sm tracking-widest uppercase font-medium" style={{ color: 'var(--purple)' }}>
         {label}
       </p>
     </div>
@@ -520,21 +520,19 @@ export default function Home() {
       {/* ── Stats ── */}
       <section
         className="py-24 px-6 relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #1e1a2e 0%, #252040 60%, #1a2640 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #f5f0ff 0%, #fdf8ef 50%, #f0f4ff 100%)' }}
       >
-        {/* Radial gold glow center */}
         <div
           style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse at center, rgba(201,168,76,0.12) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 65%)',
             pointerEvents: 'none',
           }}
         />
         <div className="max-w-4xl mx-auto relative" style={{ zIndex: 1 }}>
-          {/* Section label */}
           <p
             className="text-center text-xs tracking-widest uppercase mb-12 font-medium"
-            style={{ color: 'rgba(201,168,76,0.6)', letterSpacing: '0.25em' }}
+            style={{ color: 'var(--gold)', letterSpacing: '0.25em' }}
           >
             Our Journey In Numbers
           </p>
@@ -546,7 +544,7 @@ export default function Home() {
                   <div
                     style={{
                       width: '1px', height: '80px',
-                      background: 'linear-gradient(to bottom, transparent, rgba(201,168,76,0.3), transparent)',
+                      background: 'linear-gradient(to bottom, transparent, rgba(201,168,76,0.4), transparent)',
                       flexShrink: 0,
                     }}
                   />
