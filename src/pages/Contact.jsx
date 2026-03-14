@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1 text-gray-600">Phone Number</label>
-                  <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" className="form-input" />
+                  <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 9886777793" className="form-input" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1 text-gray-600">Subject</label>

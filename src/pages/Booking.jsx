@@ -104,7 +104,7 @@ export default function Booking() {
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-medium mb-1 text-gray-600">Phone Number *</label>
-                    <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" className="form-input" />
+                    <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 9886777793" className="form-input" />
                     {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
                   </div>
                   <div>
@@ -156,9 +156,9 @@ export default function Booking() {
             <div className="card p-6">
               <h3 className="font-playfair text-lg font-semibold mb-4" style={{ color: 'var(--dark)' }}>Contact Info</h3>
               <ul className="space-y-3 text-sm text-gray-500">
-                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>📍</span> 123 Serenity Lane, Mumbai, India</li>
-                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>📞</span> +91 98765 43210</li>
-                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>✉️</span> hello@anandareiki.com</li>
+                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>📍</span> Marathahalli, Bangalore - 560037</li>
+                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>📞</span> +91 9886777793</li>
+                <li className="flex gap-3"><span style={{ color: 'var(--gold)' }}>✉️</span> infinitejourney.8886@gmail.com</li>
               </ul>
             </div>
 
