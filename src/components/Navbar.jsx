@@ -38,7 +38,7 @@ export default function Navbar() {
 
           {/* Logo + Name */}
           <Link to="/" className="flex items-center gap-3 leading-tight">
-            <img src="/logo.png" alt="Infinite Journey Logo" className="h-14 w-auto object-contain drop-shadow-sm" />
+            <img src="/logo.png" alt="Infinite Journey Logo" className="h-14 w-14 object-contain shrink-0" />
             <div className="flex flex-col">
               <span className="font-playfair text-xl font-bold tracking-wide" style={{ color: 'var(--gold)' }}>
                 Geetha

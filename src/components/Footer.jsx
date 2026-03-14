@@ -8,7 +8,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-3">
-              <img src="/logo.png" alt="Infinite Journey" className="h-12 w-auto object-contain" />
+            <div className="h-14 w-14 rounded-xl bg-white flex items-center justify-center shrink-0 p-1">
+              <img src="/logo.png" alt="Infinite Journey" className="h-full w-full object-contain" />
+            </div>
               <div>
                 <p className="font-playfair text-lg font-bold" style={{ color: 'var(--gold)' }}>Infinite Journey</p>
                 <p className="text-xs tracking-widest uppercase" style={{ color: 'var(--purple-light)' }}>Reiki Healing Center</p>
@@ -43,10 +45,18 @@ export default function Footer() {
           <div>
             <h4 className="font-playfair text-lg mb-4" style={{ color: 'var(--gold-light)' }}>Our Courses</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>Reiki Level 1 – Shoden</li>
-              <li>Reiki Level 2 – Okuden</li>
-              <li>Reiki Level 3 – Shinpiden</li>
-              <li>Reiki Grand Master</li>
+              <li>Reiki Level 1</li>
+              <li>Reiki Level 2</li>
+              <li>Reiki Level 3</li>
+              <li>Reiki Master Level</li>
+              <li>Karuna Reiki</li>
+              <li>Money Reiki</li>
+              <li>Chakra Balancing Reiki</li>
+              <li>Distance Reiki Healing</li>
+              <li>Aura Cleansing Reiki</li>
+              <li>Crystal Reiki Healing</li>
+              <li>Emotional Healing Reiki</li>
+              <li>Meditation & Reiki Healing ✨</li>
             </ul>
           </div>
 

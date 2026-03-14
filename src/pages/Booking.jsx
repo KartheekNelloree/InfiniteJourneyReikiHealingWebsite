@@ -6,13 +6,19 @@ const initialForm = {
 }
 
 const courseOptions = [
-  'Reiki Level 1 – Shoden (₹5,000)',
-  'Reiki Level 2 – Okuden (₹8,000)',
-  'Reiki Level 3 / Master – Shinpiden (₹15,000)',
-  'Reiki Grand Master (₹25,000)',
+  'Reiki Level 1 (₹5,000)',
+  'Reiki Level 2 (₹8,000)',
+  'Reiki Level 3 (₹12,000)',
+  'Reiki Master Level (₹15,000)',
+  'Karuna Reiki (₹10,000)',
+  'Money Reiki (₹6,000)',
+  'Chakra Balancing Reiki (₹5,000)',
+  'Distance Reiki Healing (₹5,000)',
+  'Aura Cleansing Reiki (₹5,000)',
+  'Crystal Reiki Healing (₹6,000)',
+  'Emotional Healing Reiki (₹5,000)',
+  'Meditation & Reiki Healing (₹5,000)',
   'Individual Healing Session',
-  'Chakra Balancing Session',
-  'Distance Healing Session',
   'Free Consultation',
 ]
 

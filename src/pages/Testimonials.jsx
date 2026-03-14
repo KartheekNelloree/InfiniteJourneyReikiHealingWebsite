@@ -22,10 +22,10 @@ export default function Testimonials() {
     <div className="pt-20">
       {/* Page Hero */}
       <div className="page-hero">
-        <p className="text-sm tracking-widest uppercase mb-3 font-medium" style={{ color: 'var(--gold)' }}>Real Transformations</p>
-        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: 'var(--dark)' }}>Student Testimonials</h1>
+        <p className="text-sm tracking-widest uppercase mb-3 font-bold" style={{ color: '#6b4c00' }}>Real Transformations</p>
+        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: '#0d0b1a' }}>Student Testimonials</h1>
         <div className="gold-divider" />
-        <p className="mt-4 text-gray-500 max-w-xl mx-auto">Hear from those whose lives have been transformed through Reiki healing and training.</p>
+        <p className="mt-4 max-w-xl mx-auto font-medium" style={{ color: '#3d3a50' }}>Hear from those whose lives have been transformed through Reiki healing and training.</p>
       </div>
 
       {/* Testimonials Grid */}
@@ -71,7 +71,7 @@ export default function Testimonials() {
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto grid grid-cols-3 gap-8 text-center">
           {[
-            { number: '500+', label: 'Students Trained' },
+            { number: '100+', label: 'Students Trained' },
             { number: '4.9★', label: 'Average Rating' },
             { number: '100%', label: 'Recommended Us' },
           ].map((s, i) => (

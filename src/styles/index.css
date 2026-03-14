@@ -150,7 +150,10 @@ body {
 
 /* ── Page hero banner ── */
 .page-hero {
-  background: linear-gradient(135deg, #ede8ff 0%, #f5f0ff 40%, #e8f4fd 70%, #fdf8f0 100%);
+  background-image: url('/premium_spiritual_hero_7chakras.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 8rem 1.5rem 5rem;
   text-align: center;
   position: relative;
@@ -160,9 +163,22 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cpath d='M80,40 C80,20 100,10 116,20 C132,30 140,47 127,59 C114,71 93,64 80,50 C67,64 46,71 33,59 C20,47 28,30 44,20 C60,10 80,20 80,40Z' fill='none' stroke='rgba(201,168,76,0.12)' stroke-width='1.5'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 160px 80px;
+  background: rgba(255, 255, 255, 0.45);
+}
+.page-hero * {
+  position: relative;
+  z-index: 1;
+}
+.page-hero h1,
+.page-hero h2,
+.page-hero h3 {
+  color: #0d0b1a !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.95), 0 0 20px rgba(255,255,255,0.6);
+}
+.page-hero p {
+  color: #1e1a2e !important;
+  font-weight: 600;
+  text-shadow: 0 1px 6px rgba(255,255,255,0.95);
 }
 .page-hero-light {
   background: linear-gradient(135deg, #ede8ff 0%, #f5f0ff 50%, #e8f0ff 100%);
@@ -176,7 +192,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 2.6rem;
   font-weight: 700;
-  color: var(--dark);
+  color: #0d0b1a;
   line-height: 1.2;
 }
 

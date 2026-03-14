@@ -19,10 +19,10 @@ export default function About() {
     <div className="pt-20">
       {/* Page Hero */}
       <div className="page-hero">
-        <p className="text-sm tracking-widest uppercase mb-3 font-medium" style={{ color: 'var(--gold)' }}>Our Story</p>
-        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: 'var(--dark)' }}>About Our Healer</h1>
+        <p className="text-sm tracking-widest uppercase mb-3 font-bold" style={{ color: '#6b4c00' }}>Our Story</p>
+        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: '#0d0b1a' }}>About Our Healer</h1>
         <div className="gold-divider" />
-        <p className="mt-4 text-gray-500 max-w-xl mx-auto">Meet the heart and soul behind Infinite Journey Reiki Healing Center</p>
+        <p className="mt-4 max-w-xl mx-auto font-medium" style={{ color: '#3d3a50' }}>Meet the heart and soul behind Infinite Journey Reiki Healing Center</p>
       </div>
 
       {/* Healer Bio */}
@@ -32,16 +32,16 @@ export default function About() {
           <div className="flex justify-center">
             <div className="relative">
               {/* Outer glow ring */}
-              <div className="absolute -inset-4 rounded-full" style={{ background: 'linear-gradient(135deg, rgba(201,168,76,0.25), rgba(155,142,196,0.25))', filter: 'blur(12px)' }} />
+              <div className="absolute -inset-4 rounded-lg" style={{ background: 'linear-gradient(135deg, rgba(201,168,76,0.25), rgba(155,142,196,0.25))', filter: 'blur(12px)' }} />
               {/* Dashed ring */}
-              <div className="absolute -inset-3 rounded-full border-2 border-dashed" style={{ borderColor: 'var(--gold)', opacity: 0.5 }} />
+              <div className="absolute -inset-3 rounded-lg border-2 border-dashed" style={{ borderColor: 'var(--gold)', opacity: 0.5 }} />
               {/* Inner ring */}
-              <div className="absolute -inset-1 rounded-full border-2" style={{ borderColor: 'var(--purple-light)' }} />
+              <div className="absolute -inset-1 rounded-lg border-2" style={{ borderColor: 'var(--purple-light)' }} />
               {/* Photo */}
               <img
-                src="/geetha.jpg"
+                src="/geetha.jpeg"
                 alt="Geetha — Reiki Growth Coach"
-                className="w-80 h-80 rounded-full object-cover relative z-10"
+                className="w-80 h-80 rounded-lg object-cover relative z-10"
                 style={{ objectPosition: 'center 15%', boxShadow: '0 20px 50px rgba(155,142,196,0.35)' }}
               />
               {/* Badge */}
@@ -124,7 +124,11 @@ export default function About() {
       {/* Why Choose Us */}
       <section className="py-20 px-6 cta-bg text-white">
         <div className="max-w-7xl mx-auto">
-          <SectionHeading title="Why Choose Infinite Journey?" subtitle="What sets our healing center apart." />
+          <div className="mb-12 text-center">
+            <h2 className="font-playfair text-5xl font-bold mb-4 text-white">Why Choose Infinite Journey?</h2>
+            <div className="gold-divider" />
+            <p className="mt-4 text-white/80 max-w-2xl mx-auto text-base leading-relaxed">What sets our healing center apart.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f, i) => (
               <div key={i} className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all">

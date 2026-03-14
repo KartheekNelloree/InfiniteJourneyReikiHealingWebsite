@@ -245,16 +245,10 @@ export default function Home() {
       {/* ── Hero ── */}
       <section
         className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden"
-        style={{ background: 'linear-gradient(160deg, #f5f0ff 0%, #fdf8ef 60%, #f0f4ff 100%)' }}
+        style={{ backgroundImage: 'url(/premium_spiritual_hero_7chakras.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        {/* Background texture overlay */}
-        <div
-          style={{
-            position: 'absolute', inset: 0, pointerEvents: 'none',
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cpath d='M80,40 C80,20 100,10 116,20 C132,30 140,47 127,59 C114,71 93,64 80,50 C67,64 46,71 33,59 C20,47 28,30 44,20 C60,10 80,20 80,40Z' fill='none' stroke='rgba(201,168,76,0.15)' stroke-width='1.5'/%3E%3C/svg%3E")`,
-            backgroundRepeat: 'repeat', backgroundSize: '160px 80px',
-          }}
-        />
+        {/* White overlay for readability */}
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.55)', pointerEvents: 'none' }} />
 
         {/* Gold glow orb — top right */}
         <div

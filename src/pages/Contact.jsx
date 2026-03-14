@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const initialForm = { name: '', email: '', subject: '', message: '' }
+const initialForm = { name: '', email: '', phone: '', subject: '', message: '' }
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm)
@@ -40,10 +40,10 @@ export default function Contact() {
     <div className="pt-20">
       {/* Page Hero */}
       <div className="page-hero">
-        <p className="text-sm tracking-widest uppercase mb-3 font-medium" style={{ color: 'var(--gold)' }}>We'd Love to Hear From You</p>
-        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: 'var(--dark)' }}>Get In Touch</h1>
+        <p className="text-sm tracking-widest uppercase mb-3 font-bold" style={{ color: '#6b4c00' }}>We'd Love to Hear From You</p>
+        <h1 className="font-playfair text-5xl font-bold mb-4" style={{ color: '#0d0b1a' }}>Get In Touch</h1>
         <div className="gold-divider" />
-        <p className="mt-4 text-gray-500 max-w-xl mx-auto">Have a question or want to learn more? Send us a message and we'll respond within 24 hours.</p>
+        <p className="mt-4 max-w-xl mx-auto font-medium" style={{ color: '#3d3a50' }}>Have a question or want to learn more? Send us a message and we'll respond within 24 hours.</p>
       </div>
 
       <section className="py-24 px-6">
@@ -75,6 +75,10 @@ export default function Contact() {
                   <label className="block text-sm font-medium mb-1 text-gray-600">Email Address *</label>
                   <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="your@email.com" className="form-input" />
                   {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1 text-gray-600">Phone Number</label>
+                  <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" className="form-input" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1 text-gray-600">Subject</label>
