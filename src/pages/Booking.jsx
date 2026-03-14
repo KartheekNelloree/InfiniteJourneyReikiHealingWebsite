@@ -50,7 +50,7 @@ export default function Booking() {
 
     setStatus('loading')
     try {
-      await axios.post('/api/book-consultation', form)
+      await axios.post(`${import.meta.env.VITE_API_URL || ''}/api/book-consultation`, form)
       setStatus('success')
       setForm(initialForm)
     } catch {

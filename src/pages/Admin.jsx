@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api/admin' })
+const api = axios.create({ baseURL: `${import.meta.env.VITE_API_URL || ''}/api/admin` })
 
 // Attach token to every request
 api.interceptors.request.use((config) => {
@@ -20,7 +20,7 @@ function LoginScreen({ onLogin }) {
     e.preventDefault()
     setLoading(true); setError('')
     try {
-      const res = await axios.post('/api/admin/login', form)
+      const res = await axios.post(`${import.meta.env.VITE_API_URL || ''}/api/admin/login`, form)
       localStorage.setItem('admin_token', res.data.token)
       onLogin()
     } catch {
